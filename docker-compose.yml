@@ -1,0 +1,16 @@
+php:
+  build: ./http
+  ports:
+    - "80:80"
+  volumes:
+    - ./http/www:/var/www/html
+  links: 
+    - db  
+
+db:
+  build: ./db
+  volumes:
+   - /root/docker-2/db/mysql:/var/lib/mysql
+  environment:
+   - MYSQL_ROOT_PASSWORD=kermit
+   - MYSQL_DATABASE=testing
