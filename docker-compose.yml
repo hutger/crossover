@@ -10,7 +10,7 @@ php:
 db:
   build: ./db
   volumes:
-   - /root/docker-2/db/mysql:/var/lib/mysql
+   - /var/lib/mysql
   environment:
    - MYSQL_ROOT_PASSWORD=kermit
    - MYSQL_DATABASE=testing
