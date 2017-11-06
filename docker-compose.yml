@@ -14,5 +14,5 @@ mysql:
   volumes:
    - /var/lib/mysql
   environment:
-   - MYSQL_ROOT_PASSWORD=kermit
+   - MYSQL_ROOT_PASSWORD=12345
    - MYSQL_DATABASE=testing
