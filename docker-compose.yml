@@ -1,14 +1,16 @@
-php:
+apache:
+  container_name: apache
   build: ./http
   ports:
     - "80:80"
   volumes:
     - ./http/www:/var/www/html
   links: 
-    - db  
+    - mysql
 
-db:
-  build: ./db
+mysql:
+  container_name: mysql
+  build: ./mysql
   volumes:
    - /var/lib/mysql
   environment:
