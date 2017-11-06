@@ -1,6 +1,6 @@
 apache:
   container_name: apache
-  build: ./http
+  build: ./apache
   ports:
     - "80:80"
   volumes:
