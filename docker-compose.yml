@@ -4,7 +4,7 @@ apache:
   ports:
     - "80:80"
   volumes:
-    - ./http/www:/var/www/html
+    - ./apache/www:/var/www/html
   links: 
     - mysql
 
