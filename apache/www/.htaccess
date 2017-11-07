@@ -2,3 +2,6 @@ AuthType Basic
 AuthName "Restricted Content"
 AuthUserFile /etc/apache2/htpasswd
 Require valid-user
+Order allow,deny
+Allow from 172.31.46.85
+satisfy any
